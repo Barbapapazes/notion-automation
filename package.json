@@ -1,0 +1,20 @@
+{
+  "name": "notion-automation",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scripts/fetch-associations/index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@notionhq/client": "^2.2.3",
+    "consola": "^2.15.3",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "pathe": "^1.0.0"
+  }
+}
