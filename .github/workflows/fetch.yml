@@ -30,11 +30,11 @@ jobs:
         uses: actions/cache@v3
         with:
           path: node_modules
-          key: node-modules-${{ hashFiles('yarn.lock') }}
+          key: node-modules-${{ hashFiles('package-lock.json') }}
 
       - name: Install Dependencies
         if: steps.node-cache.outputs.cache-hit != 'true'
-        run: yarn --immutable
+        run: npm ci
 
   fetch-and-pr:
     name: Fetch and Pull Request
@@ -50,7 +50,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: yarn
+          cache: npm
 
       - name: Restore Node Modules
         id: node-cache
