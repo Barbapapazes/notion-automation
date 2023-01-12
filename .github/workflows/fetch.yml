@@ -56,6 +56,9 @@ jobs:
           key: node-modules-${{ hashFiles('yarn.lock') }}
 
       - name: Fetch Associations
+        env:
+          NOTION_KEY: ${{ secrets.NOTION_KEY }}
+          NOTION_ASSOCIATIONS_DATABASE_ID: ${{ secrets.NOTION_ASSOCIATIONS_DATABASE_ID }}
         run: node ./scripts/fetch-associations/index.mjs
 
       - name: Create Pull Request
