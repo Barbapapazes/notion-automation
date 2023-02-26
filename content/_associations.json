@@ -1,0 +1,32 @@
+{
+  "body": [
+    {
+      "name": "4L Trophy Coordination",
+      "category": "Sportive",
+      "schools": [
+        "Rennes School of Business"
+      ]
+    },
+    {
+      "name": "ACCEDE Provence Entrepreneurs",
+      "category": "Professionnalisante",
+      "schools": [
+        "Kedge BS"
+      ]
+    },
+    {
+      "name": "AgroVéloCity",
+      "category": "Environnementale",
+      "schools": [
+        "AgroParisTech"
+      ]
+    },
+    {
+      "name": "Aloha",
+      "category": "Sociale",
+      "schools": [
+        "Grenoble École de Management"
+      ]
+    }
+  ]
+}
